@@ -9,5 +9,4 @@ export class Negociacoes{
 }
 
 const negociacoes = new Negociacoes();
-alert("oi")
 //negociacoes.adiciona(new Negociacao())
