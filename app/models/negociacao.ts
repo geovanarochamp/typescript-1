@@ -1,15 +1,12 @@
 export class Negociacao {
-    /* tipando atributos privado / atributos de classe */
-    private _data: Date;
-    private _quantidade: number;
-    private _valor: number;
+    /*
+    Se no construtor da sua classe você coloca o modificador private ou public, isso indica para o TypeScript que ele vai por debaixo dos panos criar uma propriedade da sua classe que contenha o mesmo nome do seu com os parâmetros do construtor, e por debaixo dos panos ele vai fazer a atribuição, vai pegar esse valor e vai jogar lá para você.
+    */
 
-    /* tipando os parametros do constructor */
-    constructor(data: Date, quantidade: number, valor: number) {
-        this._data = data;
-        this._quantidade = quantidade;
-        this._valor = valor;
-    }
+    constructor(
+        private _data: Date,
+        private _quantidade: number,
+        private _valor: number) {}
 
     get data(): Date {
         return this._data;
